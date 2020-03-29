@@ -1,0 +1,13 @@
+.container_of_all{
+    z-index: -20;
+    background-color: #1d1d1d;
+    color:#e4e7ed;
+    font-family: 'Montserrat', sans-serif;
+}
+.color{
+    font-size:15px;
+    padding-right:10px;
+}
+.add-to-cart .add-to-cart-btn{
+    padding-top:15px;
+}

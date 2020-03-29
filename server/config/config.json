@@ -1,0 +1,14 @@
+{
+    "development":{
+        "PORT":3216,
+        "MONGODB_URI": "mongodb://localhost:27017/shopping_website",
+        "JWT_SECRET":"ECORP#874",
+        "JWT_EXP":"1d"
+    },
+    "production":{
+        "PORT":80,
+        "MONGODB_URI": "mongodb://xxxx/DB_Name",
+        "JWT_SECRET": "ECORP#874",
+        "JWT_EXP": "1d"
+    }
+}
