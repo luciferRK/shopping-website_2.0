@@ -30,14 +30,12 @@ export class LogInComponent implements core.OnInit {
   login_function = function(form:NgForm){
     this.userService.login(this.login_model).subscribe(
       res =>{
-        console.log("Inside ubscribe in login_function function");
         this.userService.setToken(res['token']);
         this.router.navigateByUrl('/home');
       },
       err =>{
         this.errorMsgs = true;
-        console.log("Error "+this.errorMsgs);
-        // this.resetForm(form);
+        this.resetForm(form);
       }
     )
   }

@@ -24,6 +24,11 @@ export class UserService {
     confirmPass:''
   }
 
+  toRefresh = {
+    email:'',
+    password:''
+  }
+
   constructor(private http: HttpClient) { }
 
   //http methods

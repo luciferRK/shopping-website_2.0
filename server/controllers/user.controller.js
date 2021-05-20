@@ -33,17 +33,14 @@ module.exports.authenticate = (req,res,next)=>{
     passport.authenticate('local',(err,user,info)=>{
         if (err) {
             console.log("Inside Err");
-            // console.log(res.status(400).json(err));
             return res.status(400).json(err);
         }
         else if(user) {
             console.log("Inside User");
-            // console.log(res.status(200).json({'token':user.generateJwt()}));
             return res.status(200).json({'token':user.generateJwt()});
         }
         else {
             console.log("Inside Info");
-            // console.log(res.status(404).json(info));
             return res.status(404).json(info);
         }
     })(req,res);

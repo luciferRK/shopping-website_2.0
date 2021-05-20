@@ -20,14 +20,15 @@ export class HomepageComponent implements OnInit {
         this.userDetails = res['user'];
         if(HomepageComponent.a==0){
           console.log(this.userDetails);
-          console.log("Inside Res of Homepage");
           HomepageComponent.a=1;
+          this.userService.toRefresh.email=this.userDetails.email;
         }
       },
       err =>{
         if(HomepageComponent.a==0){
           console.log(err);
           HomepageComponent.a=1;
+          this.userService.deleteToken();
         }
       }
     );

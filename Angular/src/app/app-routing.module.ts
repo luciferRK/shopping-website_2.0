@@ -32,7 +32,7 @@ const routes: Routes = [
     path:'product', component:ProductComponent
   },
   {
-    path:'search', component:SearchResultComponent
+    path:'searchresult', component:SearchResultComponent
   }
 ];
 
