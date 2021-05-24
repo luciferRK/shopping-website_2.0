@@ -22,6 +22,7 @@ import { OurFooterComponent } from './our-footer/our-footer.component';
 import { ProductComponent } from './product/product.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
+import { SampleComponent } from './sample/sample.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
     NavbarComponent,
     OurFooterComponent,
     ProductComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    SampleComponent
   ],
   imports: [
     BrowserModule,

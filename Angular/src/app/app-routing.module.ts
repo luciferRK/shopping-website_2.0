@@ -1,3 +1,4 @@
+import { SampleComponent } from './sample/sample.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { ProductComponent } from './product/product.component';
 import { ExploreComponent } from './explore/explore.component';
@@ -10,6 +11,9 @@ import {HomepageComponent} from './homepage/homepage.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
+  {
+    path:'sample',component:SampleComponent
+  },
   {
     path:'home', component:HomepageComponent
   },
