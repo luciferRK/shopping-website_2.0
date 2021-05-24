@@ -14,13 +14,11 @@ module.exports.snapdeal = (req,res) =>{
     .evaluate(() => document.querySelector('body').innerHTML)
     .end()
     .then(html =>{
-        return res.status(200).json({'status':true,'data':'inside'});
         data=[];
         var name = String;
         var pr = "";
         var haha=0;
         const $ = cheerio.load(html);
-        return res.status(200).json({'status':true,'data':$});
         $('div#products').find('section>div').each((r,elem)=>{
             $(elem).find('p.product-title').each((row,title)=>{
                 if (row==0){
